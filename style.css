@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    background: hsl(225, 100%, 94%) url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.card {
+    background-color: white;
+    width: 350px;
+    border-radius: 20px;
+}
+.first-img img {
+    width: 80%;
+    height: 170px;
+    width: 350px;
+    border-radius: 20px 20px 0 0;
+}
+.card-body h2 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 22px;
+}
+.card-body .desc {
+    text-align: center;
+    padding: 0 50px;
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+    font-weight: 500;
+}
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    width: 85%;
+    margin: 20px auto;
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+.plan-left {
+    display: flex;
+}
+.plan-left img {
+    width: 40px;
+    height: 40px;
+}
+.plan-left .pricing {
+    margin-left: 20px;
+    font-size: 13px;
+}
+.plan-left .pricing h3 {
+    color: hsl(223, 47%, 23%);
+}
+.plan-left .pricing p {
+    margin-top: 5px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+.plan .link {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+.plan .link a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 13px;
+}
+.plan .link a:hover {
+    text-decoration: none;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.buttons button {
+    width: 85%;
+    margin: 5px auto;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.buttons .payment {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: 0;
+    font-weight: 600;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+.buttons .payment:hover {
+    background-color: hsla(245, 75%, 52%, 0.7);
+    transform: scale(1.05);
+}
+.buttons .cancel {
+    background-color: white;
+    color: hsl(224, 23%, 55%);
+    border: 0;
+    font-weight: 600;
+}
+.buttons .cancel:hover {
+    color: hsl(223, 47%, 23%);
+    font-weight: 600;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
